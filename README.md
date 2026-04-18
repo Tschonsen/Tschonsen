@@ -31,6 +31,6 @@ Local inference backend (Qwen-Coder via Ollama) exposed as MCP tools. Claude Cod
 
 Polishing StockSim, building CodeBrain, and exploring what it really means for one developer to work effectively with an AI teammate on non-trivial systems.
 
-**Open to hire** for roles where that combination is the whole point.
+**Open to hire.**
 
 <sub>📍 Based in Germany · bilingual DE/EN · reach me via GitHub</sub>
