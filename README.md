@@ -2,7 +2,7 @@
 
 Creative systems thinker building at the intersection of **simulation**, **AI tooling**, and **developer experience**.
 
-I write Java and React myself; for everything else (C# .NET, Rust, Python) I work with Claude Code as a pair-programming partner. The result is one person shipping at a scope that normally takes a team — which, in 2026, is exactly the skill that matters.
+I write Java and React myself; for everything else (C# .NET, Rust, Python) I work with Claude Code as a pair-programming partner. The result is one person shipping at a scope that normally takes a team.
 
 ---
 
