@@ -14,6 +14,9 @@ C# .NET simulation engine + Electron/React UI. **~48 000 LOC**, **530 tests**, *
 ### [Claude Token Tracker](https://github.com/Tschonsen/claude-token-tracker) — Local Claude Code cost dashboard
 Tauri + React. Parses Claude Code telemetry on disk, persists to SQLite, renders daily cost, per-model breakdown, cache-hit rate, peak-hour heatmap, monthly projection. Fully offline. 3.9 MB installer.
 
+### [Claude Console](https://github.com/Tschonsen/claude-console) — Desktop GUI wrapper for Claude Code *(Phase 1 prototype)*
+Electron + React wrapping Claude Code as a real PTY. Multi-session tabs, file tree, mode selector, approval queue that lifts `(y/n)` prompts out of the terminal, diff viewer, agent monitor. Phase 2 is on hold — learnings are feeding into CodeBrain below.
+
 ### CodeBrain *(in progress)* — MCP server that Claude Code uses as a sub-agent
 Local inference backend (Qwen-Coder via Ollama) exposed as MCP tools. Claude Code delegates bulk work (content generation, UI polish, boilerplate) to save context window and rate-limit budget, while keeping reasoning for the hard parts. Think *Claude-offloader*, not *Claude-replacement*.
 
