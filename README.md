@@ -17,8 +17,11 @@ Tauri + React. Parses Claude Code telemetry on disk, persists to SQLite, renders
 ### [Claude Console](https://github.com/Tschonsen/claude-console) — Desktop GUI wrapper for Claude Code *(Phase 1 prototype)*
 Electron + React wrapping Claude Code as a real PTY. Multi-session tabs, file tree, mode selector, approval queue that lifts `(y/n)` prompts out of the terminal, diff viewer, agent monitor. Phase 2 is on hold — learnings are feeding into CodeBrain below.
 
-### CodeBrain *(in progress)* — MCP server that Claude Code uses as a sub-agent
-Local inference backend (Qwen-Coder via Ollama) exposed as MCP tools. Claude Code delegates bulk work (content generation, UI polish, boilerplate) to save context window and rate-limit budget, while keeping reasoning for the hard parts. Think *Claude-offloader*, not *Claude-replacement*.
+### [CodeBrain](https://github.com/Tschonsen/CodeBrain) — MCP server that Claude Code uses as a sub-agent
+Local inference backend (Qwen-Coder 14B via Ollama) exposed as MCP tools. Claude Code delegates bulk work (content generation, polish, boilerplate) to save context window and rate-limit budget, while keeping reasoning for the hard parts. Think *Claude-offloader*, not *Claude-replacement*. Phase 2 live with `batch_generate`, `polish`, and `.brain/context.md` passthrough.
+
+### [Spec-Driven Claude Development](https://github.com/Tschonsen/spec-driven-claude-development) — Methodology framework for AI-collaborative projects
+User-level `CLAUDE.md` plus a companion methodology doc. Codifies how I actually work with Claude: context-hygiene rules, three-tier decision autonomy, state-file hygiene that scales with project size, mini-audit and milestone checklists. The written scaffolding that keeps multi-session projects coherent when one of the collaborators has no memory between them.
 
 ---
 
@@ -32,7 +35,7 @@ Local inference backend (Qwen-Coder via Ollama) exposed as MCP tools. Claude Cod
 
 ## Currently
 
-Polishing StockSim, building CodeBrain, and exploring what it really means for one developer to work effectively with an AI teammate on non-trivial systems.
+Iterating on SDCD with real project use, pushing CodeBrain into its next phase, and exploring what it really means for one developer to work effectively with an AI teammate on non-trivial systems.
 
 **Open to hire.**
 
